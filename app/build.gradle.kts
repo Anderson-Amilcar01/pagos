@@ -66,6 +66,8 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.8.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
     implementation("androidx.compose.material:material-icons-extended")
+    implementation("androidx.compose.ui:ui-text:1.9.2")
+
 
     // --- 🔹 Material Design (para XML si usas) ---
     implementation("com.google.android.material:material:1.12.0")
@@ -80,11 +82,11 @@ dependencies {
 
     // --- 🔹 Librerías recomendadas para Compose ---
     // Accompanist (utilidades extra)
-    implementation("com.google.accompanist:accompanist-permissions:0.36.0")
+    implementation("com.google.accompanist:accompanist-permissions:0.37.3")
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.36.0")
 
     // Landscapist (carga de imágenes con Coil)
-    implementation("com.github.skydoves:landscapist-coil:2.3.6")
+    implementation("com.github.skydoves:landscapist-coil:2.6.1")
 
     // Compose Destinations (navegación type-safe)
     implementation("io.github.raamcosta.compose-destinations:core:2.2.0")
@@ -108,4 +110,9 @@ dependencies {
 
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // ZXing para generación de QR
+    implementation("com.google.zxing:core:3.5.3")
+    implementation("com.google.zxing:javase:3.5.3")
+
 }
