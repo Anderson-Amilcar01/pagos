@@ -6,7 +6,6 @@ import com.google.zxing.EncodeHintType
 import com.google.zxing.MultiFormatWriter
 import com.google.zxing.common.BitMatrix
 import java.util.EnumMap
-import kotlin.jvm.java
 
 object QrGenerator {
 
