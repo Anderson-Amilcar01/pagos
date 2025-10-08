@@ -24,7 +24,7 @@ class PagosRepository(private val apiService: ApiService) {
         return apiService.getTransacciones()
     }
 
-    suspend fun getUserProfile(userId: Long): User {
+    suspend fun getUserProfile(userId: Long): Usuario {
         return apiService.getUserById(userId)
     }
 }

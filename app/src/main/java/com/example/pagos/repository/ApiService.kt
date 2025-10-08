@@ -20,8 +20,5 @@ interface ApiService {
     suspend fun getTransacciones(): List<Transaccion>
 
     @GET("/api/usuarios/{id}")
-    suspend fun getUserById(@Path("id") id: Long): User
+    suspend fun getUserById(@Path("id") id: Long): Usuario
 }
-
-data class LoginRequest(val correo: String, val contrasena: String)
-data class AuthenticationResponse(val jwt: String)

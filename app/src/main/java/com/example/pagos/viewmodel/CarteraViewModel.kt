@@ -48,12 +48,12 @@ class CarteraViewModel(private val repository: PagosRepository) : ViewModel() {
                 // Crear transacción de recarga
                 val transaccion = Transaccion(
                     idTransaccion = 0,
-                    cartera = Cartera(idCartera = 0, alumno = User(userId, "", "", "", "", true), saldo = 0.0, fechaActualizacion = ""),
+                    cartera = Cartera(idCartera = 0, alumno = Usuario(userId, "", "", "", "", true), saldo = 0.0, fechaActualizacion = ""),
                     tipo = "RECARGA",
                     monto = monto,
                     fecha = "",
                     descripcion = descripcion,
-                    realizadoPor = User(userId, "", "", "", "", true)
+                    realizadoPor = Usuario(userId, "", "", "", "", true)
                 )
                 repository.realizarRecarga(transaccion)
                 _recargaState.value = RecargaState.Success
