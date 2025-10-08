@@ -90,6 +90,7 @@ dependencies {
 
     // Compose Destinations (navegación type-safe)
     implementation("io.github.raamcosta.compose-destinations:core:2.2.0")
+    implementation(libs.androidx.runtime.saveable)
     ksp("io.github.raamcosta.compose-destinations:ksp:2.2.0")
 
     // Vico (gráficas)
@@ -114,6 +115,12 @@ dependencies {
     // ZXing para generación de QR
     implementation("com.google.zxing:core:3.5.3")
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")
-
-
+    // OkHttp para manejo de imágenes y archivos
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    // CameraX
+    implementation("androidx.camera:camera-camera2:1.3.1")
+    implementation("androidx.camera:camera-lifecycle:1.3.1")
+    implementation("androidx.camera:camera-view:1.3.1")
+    implementation("androidx.camera:camera-extensions:1.3.1")
 }

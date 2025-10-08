@@ -1,5 +1,6 @@
 package com.example.pagos.controllers
-
+import com.example.pagos.model.*
+import com.example.pagos.service.ApiService
 class TransaccionController(private val apiService: ApiService) {
     suspend fun obtenerTransaccionesUsuario(token: String, usuarioId: Long): Result<List<Transaccion>> {
         return try {

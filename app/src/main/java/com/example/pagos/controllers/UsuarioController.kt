@@ -1,5 +1,9 @@
 package com.example.pagos.controllers
-
+import com.example.pagos.model.*
+import com.example.pagos.service.ApiService
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.toRequestBody
 class UsuarioController(private val apiService: ApiService) {
     suspend fun obtenerUsuarioActual(token: String): Result<Usuario> {
         return try {

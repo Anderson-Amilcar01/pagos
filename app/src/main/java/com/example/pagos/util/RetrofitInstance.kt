@@ -1,12 +1,12 @@
 package com.example.pagos.util
-import com.example.pagos.repository.ApiService
+
+import com.example.pagos.service.ApiService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-
 object RetrofitInstance {
-    private const val BASE_URL = "http://localhost:8080/"
-    private const val BASER_URL="http://" // Cambiar por la IP de tu máquina
+    // Cambia esto por la URL de desarrollo / producción adecuada
+    private const val BASE_URL = "http://192.168.0.100:8080/" // <- reemplaza con IP real cuando pruebes en dispositivo
 
     private val retrofit by lazy {
         Retrofit.Builder()

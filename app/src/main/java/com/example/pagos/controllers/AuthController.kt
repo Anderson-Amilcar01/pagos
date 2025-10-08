@@ -1,5 +1,6 @@
 package com.example.pagos.controllers
-import com.example.pagos.repository.ApiService
+import com.example.pagos.model.LoginRequest
+import com.example.pagos.service.ApiService
 
 class AuthController(private val apiService: ApiService) {
     suspend fun login(correo: String, contrasena: String): Result<String> {

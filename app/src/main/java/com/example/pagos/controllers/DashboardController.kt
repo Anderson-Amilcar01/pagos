@@ -1,4 +1,6 @@
 package com.example.pagos.controllers
+import com.example.pagos.model.dasboardData.*
+import com.example.pagos.service.ApiService
 
 class DashboardController(private val apiService: ApiService) {
     suspend fun obtenerEstadisticasGenerales(token: String): Result<EstadisticasGenerales> {

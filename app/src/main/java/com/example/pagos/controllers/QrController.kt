@@ -1,5 +1,11 @@
 package com.example.pagos.controllers
-
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import com.example.pagos.model.PaymentRequest
+import com.example.pagos.service.ApiService
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.toRequestBody
 class QrController(private val apiService: ApiService) {
     suspend fun generarCodigoQr(token: String, usuarioId: Long): Result<Bitmap> {
         return try {
